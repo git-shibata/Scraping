@@ -3,6 +3,7 @@ import urllib.request
 import numpy
 import pandas
 import matplotlib.pyplot as plt
+import sys
 
 from keras.models import Sequential
 from keras.layers.core import Dense, Activation
