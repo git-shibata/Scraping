@@ -1,5 +1,15 @@
 # request.urlretriveを使ったScraping
 import urllib.request
+import numpy
+import pandas
+import matplotlib.pyplot as plt
+
+from keras.models import Sequential
+from keras.layers.core import Dense, Activation
+from keras.layers.recurrent import LSTM
+from datetime import datetime as dt
+import time
+import math
 
 currency_pair = 'usdjpy'
 #currency_pair = 'eurjpy'
