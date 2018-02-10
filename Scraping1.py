@@ -1,7 +1,7 @@
 # request.urlretriveを使ったScraping
 import urllib.request
 import numpy
-import pandas
+import pandas as pd
 import matplotlib.pyplot as plt
 import sys
 
@@ -30,3 +30,5 @@ url           = "https://stooq.com/q/d/l/?s=" + currency_pair + \
 file_name     = currency_pair + '_d.csv'
 #取得して、ファイルに保存(よくよく考えると保存しなくてもいいな)
 urllib.request.urlretrieve(url, file_name)
+df = pd.read_csv("usdjpy_d.csv", index_col="Date")
+print(df.shape)
